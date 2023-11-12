@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.page{
+    margin: 20px;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sorry{
+    background-color: #eee;
+    margin: 10px;
+    text-align: center;
+    color: red;
+    padding: 10px 0;
+    display: none;
+}
+
+.page .add{
+    justify-content: space-between;
+}
+.page .add button{
+    width: fit-content;
+    border: 0;
+    background-color: #b8bbbf;
+    padding: 8px 9px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+.page .add button:hover{
+background-color: #9b9b9b;
+}
+
+.page input{
+    border: none;
+    padding: 4px 5px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.page .first-color li ,.page .second-color li {
+    padding: 10px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 6px;
+    color: white;
+}
+
+.page .first-color:hover li ,.page .second-color:hover li{
+    cursor: pointer;
+}
+
+.active{
+    border: 3px solid black;
+}
+
+.page .new-color{
+    height: 140px;
+    width: 100%;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    transition: .3s;
+ position: relative;
+}
+.page .new-color .color-one, .page .new-color .color-two{
+    width: 200px;
+    height: 80%;
+    margin: 10px;
+    border-radius: 10px;
+    opacity: .5;
+    position: absolute;
+    transition: .3s;
+}
+.page .new-color .color-one{
+    background-color:red;
+    left: 0;
+}
+.page .new-color .color-two{
+    background-color:blue;
+    right: 0;
+}
+
+.mix{
+    margin: auto;
+    display: block;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background-image: linear-gradient(90deg,red, blue, green, yellow);
+}
+
+.mix:hover{
+   cursor: pointer;
+   padding: 10px 25px;
+    transition: .3s;
+}
+
+.w-full{
+    width: 100%;
+}
